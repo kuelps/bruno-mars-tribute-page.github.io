@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#main {
+    margin: 30px 8px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    margin-block-end: 10px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#img-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+#image {
+    width: 100%;
+}
+
+#img-caption {
+    text-align: justify;
+    padding: 60px;
+    margin: auto;
+    font-size: 1rem;
+    min-width: 15px;
+}
+
+::selection {
+    color: white;
+    background-color: gray;
+}
+
+#tribute-info {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+#headline1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#album {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 60px;
+
+}
+
+#album li {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+
+#album1,
+#album2,
+#album3,
+#album4 {
+    box-shadow: 0 0 3px black;
+    width: 150px;
+    height: 150px;
+}
+
+#album1 {
+    background-image: url(img/album/doo\ wops\ hooligans.png);
+}
+
+#album2 {
+    background-image: url(img/album/unorthodox\ jukebox.png);
+}
+
+#album3 {
+    background-image: url(img/album/24k\ magic.png);
+}
+
+#album4 {
+    background-image: url(img/album/an\ evening\ with\ silk\ sonic.png);
+}
+
+#album li a:hover {
+    opacity: 0;
+}
+
+#headline2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#more-info1,
+#more-info2,
+#more-info3 {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#headline3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#link {
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+
+
+@media (max-width: 800px) {
+    #img-div {
+        display: block;
+    }
+
+    #img-caption {
+        padding: 15px;
+    }
+
+    #album {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #album li {
+        margin: auto;
+    }
+
+    #more-info1,
+    #more-info2,
+    #more-info3 {
+        width: 95%;
+    }
+
+    #link {
+        width: 160px;
+    }
+}
