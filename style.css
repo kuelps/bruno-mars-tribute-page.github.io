@@ -135,6 +135,11 @@ body {
     grid-gap: 10px;
 }
 
+#web img,
+#instagram img,
+#twitter img {
+    width: 50px;
+}
 
 
 @media (max-width: 800px) {
